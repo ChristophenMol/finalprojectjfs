@@ -1,10 +1,22 @@
 .home img {
     max-height: 400px;
     max-width: 400px;
+   
 }
 .form-group button {
     border-radius: 25px;
 }
 .form-group {
     margin-left: 50px;
+}
+.chris {
+    max-width: 300px;
+    max-height: 300px;
+}
+.intro {
+    text-align: center;
+    margin: 100px;
+}
+.cbio {
+    width: 300px;
 }
