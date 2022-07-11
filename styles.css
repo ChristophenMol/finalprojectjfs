@@ -8,7 +8,7 @@ h1 {
 .home img {
     max-height: 400px;
     max-width: 400px;
-   
+   float: right;
 }
 .form-group button {
     border-radius: 25px;
@@ -26,6 +26,10 @@ h1 {
     max-width: 300px;
     max-height: 300px;
 }
+.France{
+    max-width: 300px;
+    max-height: 300px;
+}
 .intro {
     text-align: center;
     margin: 100px;
@@ -34,4 +38,7 @@ h1 {
 }
 .cbio {
     width: 300px;
+}
+body{
+    background-color: rgb(0, 153, 255);
 }
