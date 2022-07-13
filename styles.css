@@ -5,29 +5,10 @@ h1 {
     font-weight:bold;
     text-align: center;
 }
-h2, h3 {
+h2, h3, h6 {
     text-align: center;
 }
 
-.home {
-    position: absolute;
-}
-.form-group button {
-    border-radius: 25px;
-}
-.form-group {
-    display: inline-block;
-    text-align: left;
-    
-}
-
-.form-parent {
-    position: absolute;
-    display: inline-block;
-    margin-left: 500px;
-    margin-right: auto;
-    text-align: center;
-}
 
 .about {
     text-decoration: underline;
