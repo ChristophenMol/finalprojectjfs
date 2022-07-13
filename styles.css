@@ -1,20 +1,32 @@
+
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2rem;
     font-weight:bold;
     text-align: center;
 }
+h2, h3 {
+    text-align: center;
+}
 
-.home img {
-    max-height: 400px;
-    max-width: 400px;
-   float: right;
+.home {
+    position: absolute;
 }
 .form-group button {
     border-radius: 25px;
 }
 .form-group {
-    margin-left: 50px;
+    display: inline-block;
+    text-align: left;
+    
+}
+
+.form-parent {
+    position: absolute;
+    display: inline-block;
+    margin-left: 500px;
+    margin-right: auto;
+    text-align: center;
 }
 
 .about {
@@ -30,14 +42,6 @@ h1 {
     max-width: 300px;
     max-height: 300px;
 }
-.maridalia{
-    max-width: 300px;
-    max-height: 300px;
-}
-.lafecesus{
-    max-width: 300px;
-    max-height: 300px;
-}
 .intro {
     text-align: center;
     margin: 100px;
@@ -47,6 +51,7 @@ h1 {
 .cbio {
    
 }
+<<<<<<< HEAD
 body{
     background-color: rgb(0, 153, 255);
 }
@@ -77,19 +82,25 @@ body{
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
+=======
+
+.landing {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+>>>>>>> b8d75535d627281b6036222d6fca450685232581
 }
-.gallery__item--4 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
+.landing img{
+    max-height: 700px;
+    max-width: 700px;
+    
 }
-.gallery__item--5 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
+.lafecesus {
+    height: 200px;
+    width: auto;
 }
+<<<<<<< HEAD
 .gallery__item--6 {
     grid-column-start: 5;
     grid-column-end: 9;
@@ -135,3 +146,14 @@ h3{
 }
 
 
+=======
+
+.maridalia {
+    height: 300px;
+    width: 300px;
+}
+.lafecesus{
+    height: 300px;
+    width:300px;
+}
+>>>>>>> b8d75535d627281b6036222d6fca450685232581
