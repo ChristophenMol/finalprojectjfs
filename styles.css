@@ -82,14 +82,6 @@ body{
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
-=======
-
-.landing {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
->>>>>>> b8d75535d627281b6036222d6fca450685232581
 }
 .landing img{
     max-height: 700px;
@@ -146,8 +138,6 @@ h3{
 }
 
 
-=======
-
 .maridalia {
     height: 300px;
     width: 300px;
@@ -156,4 +146,3 @@ h3{
     height: 300px;
     width:300px;
 }
->>>>>>> b8d75535d627281b6036222d6fca450685232581
