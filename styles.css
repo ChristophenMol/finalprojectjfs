@@ -63,3 +63,21 @@ h6, h3 {
     max-width: 700px;
     
 }
+
+ .card {
+    display: inline-block;
+    
+  }
+
+  .cardbox {
+    margin-left: 140px;
+    margin-top: 100px;
+  }
+
+  .price, .card-title {
+    text-align: center;
+  }
+
+  .btn {
+    margin-left: 102px;
+  }
