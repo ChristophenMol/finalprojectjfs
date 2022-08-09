@@ -47,7 +47,7 @@ class ProductsController {
 }
 
 addItemCard({'name':'Flowers',
-    'image':'/finalprojectjfs/flowers.jpg',
+    'image':'../flowers.jpg',
     'description':'Flowers.'});
 
 
