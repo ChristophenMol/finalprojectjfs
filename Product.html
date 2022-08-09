@@ -1,54 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Products</title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+       <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Captured</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>   
     <h1>Current Listings</h1>
-<  <div class="cardbox">
-    <div class="card" style="width: 18rem;">
-      <img src="product1.jpeg" class="card-img-top" alt="coastline">
-      <div class="card-body">
-        <h5 class="card-title">Coastline</h5>
-        <p class="card-text">Submitted by Anonymous, this image features a sprawling blue coast with stacked colorful buildings.</p>
-        <p class="price">$50.00</p>
-        <a href="#" class="btn btn-primary">Buy</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="product2.jpg" class="card-img-top" alt="river">
-      <div class="card-body">
-        <h5 class="card-title">River</h5>
-        <p class="card-text">Submitted by Anonymous, this image features a river at the base of a vast mountain range with a forest surrounding it.</p>
-        <p class="price">$50.00</p>
-        <a href="#" class="btn btn-primary">Buy</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="product3.jpg" class="card-img-top" alt="coastline">
-      <div class="card-body">
-        <h5 class="card-title">Aurora Borealis</h5>
-        <p class="card-text">Submitted by Anonymous, this image features the Northern Lights, a naturally occurring phenomenon in Iceland.</p>
-        <p class="price">$50.00</p>
-        <a href="#" class="btn btn-primary">Buy</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="product4.jpg" class="card-img-top" alt="coastline">
-      <div class="card-body">
-        <h5 class="card-title">Bridge</h5>
-        <p class="card-text">Submitted by Anonymous, this image features an elevated pedestrian bridge within a forest of heavy foliage..</p>
-        <p class="price">$50.00</p>
-        <a href="#" class="btn btn-primary">Buy</a>
-      </div>
-    </div>
-    <!-- <div id="list-items"></div> -->
-    </div>
 <script src="/js/ProductsController.js"></script>
+<div class="container">
+  <h2>Coastline</h2>
+    <div class="row">
+        <div class="col-6">
+            <img src="product1.jpeg">
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <span>Submitted by Anonymous, this image features a sprawling blue coast with stacked colorful buildings.</span>
+        </div>
+        <div class="col-1">
+            <span>$50.00</span>
+        </div>
+    </div>
+    <h2>River</h2>
+    <div class="row">
+        <div class="col-6">
+            <img src="product2.jpg">
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <span>Submitted by Anonymous, this image features a river at the base of a vast mountain range with a forest surrounding it.</span>
+        </div>
+        <div class="col-1">
+            <span>$50.00</span>
+        </div>
+    </div>
+    <h2>Aurora Borealis</h2>
+    <div class="row">
+        <div class="col-6"
+            <img src="product4.jpg"
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <span>Submitted by Anonymous, this image features the Northern Lights, a naturally occuring phenomenon in Iceland.</span>
+        </div>
+        <div class="col-1">
+            <span>$50.00</span>
+        </div>
+    </div>
+    <h2>Bridge</h2>
+    <div class="row">
+        <div class="col-6">
+            <img src="product4.jpg">
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <span>Submitted by Anonymous, this image features an elevated pedestrian bridge within a forest of heavy foliage.</span>
+        </div>
+        <div class="col-1">
+            <span>$50.00</span>
+        </div>
+    </div>
+
+</div>
     </body>
 </html>

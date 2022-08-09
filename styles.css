@@ -5,29 +5,10 @@ h1 {
     font-weight:bold;
     text-align: center;
 }
-h6, h3 {
+h2, h3, h6 {
     text-align: center;
 }
 
-.home {
-    position: absolute;
-}
-.form-group button {
-    border-radius: 25px;
-}
-.form-group {
-    display: inline-block;
-    text-align: left;
-    
-}
-
-.form-parent {
-    position: absolute;
-    display: inline-block;
-    margin-left: 500px;
-    margin-right: auto;
-    text-align: center;
-}
 
 .about {
     text-decoration: underline;
@@ -49,15 +30,40 @@ h6, h3 {
     font-weight: bold;
 }
 .cbio {
-    width: 300px;
+   
+}
+body{
+    background-color: rgb(0, 153, 255);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-gap: 15px;
+}
+.gallery__img {
+    width: 200px;
+    height: 200px;
+}
+/* .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 
-.landing {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
 .landing img{
     max-height: 700px;
     max-width: 700px;
@@ -80,4 +86,72 @@ h6, h3 {
 
   .btn {
     margin-left: 102px;
+  }
+=======
+.lafecesus {
+    height: 200px;
+    width: auto;
+}
+
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+} */
+.container{
+    display: flex;
+}
+
+ .grid{
+    display: grid;
+    grid-template-areas: "img1 img2"
+                         "img3 img4"
+                         "img5 img6";
+}
+.gallery__img--1{
+    grid-area: img1;
+}
+.gallery__img--2{
+    grid-area: img2;
+}
+.gallery__img--3{
+    grid-area: img3;
+}
+.gallery__img--4{
+    grid-area: img4;
+}
+.gallery__img--5{
+    grid-area: img5;
+}
+.gallery__img--6{
+    grid-area: img6;
+} 
+h3{
+    text-align: center;
+}
+.row{
+   justify-content: center;
+}
+.container3{
+    display: flex;
+}
+
+
+.maridalia {
+    height: 300px;
+    width: 300px;
+}
+.lafecesus{
+    height: 300px;
+    width:300px;
+}
+
+.bg { 
+    background-image: url("flowers.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
   }

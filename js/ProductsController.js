@@ -18,21 +18,15 @@ class ProductsController {
 
         this.items.push(newProduct);
         }
-    }
-    loadItemsFromLocalStorage() {
-        const storageItems = localStorage.getItem("items")
-        if (storageItems) {
-            const items = JSON.parse(storageItems)
-            //TODO load the items into the local items structure (this.items)           
         }
-    }
-
+        
  const i = new ProductsController();
 
  i.addItems("flamethrow", "Banksy", "graffiti", "image.jpg", 5000000, "Berlin 2011");
  //console.log(i.items[0]);
  
- function addItemCard(item){
+
+function addItemCard(item){
     const itemHTML = '<div class="card" style="width: 18rem;">\n' +
         '    <img src="'+item.image+'" class="card-img-top" alt="image">\n' +
         '    <div class="card-body">\n' +
@@ -49,8 +43,6 @@ class ProductsController {
 addItemCard({'name':'Flowers',
     'image':'../flowers.jpg',
     'description':'Flowers.'});
-
-    
 
 
 
