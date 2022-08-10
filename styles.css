@@ -136,3 +136,16 @@ h3{
     background-size: cover;
     
   }
+
+  .card-box {
+    margin-top: 100px;
+    margin-left: 140px;;
+  }
+
+  .card {
+    display: inline-block;
+  }
+
+  .card-body {
+    text-align: center;
+  }
