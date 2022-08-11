@@ -15,10 +15,11 @@ function addItemCard(item){
 }
 
 
+
 function loadStorageSampleData(){
     if(!localStorage.getItem("items")){
         const sampleItems = [{'name':'',
-        'img':'',
+        'image':'',
         'description':''},
         {'name':'Cherry Blossoms',
         'image':'https://www.pexels.com/photo/selective-focus-photography-of-pink-cherry-blossom-flowers-2099737/',
@@ -33,6 +34,7 @@ function loadCardsListFromProductsController(){
         addItemCard(item);
     }
 }
+
 
 loadStorageSampleData();
 productsController.loadItemsFromLocalStorage();
