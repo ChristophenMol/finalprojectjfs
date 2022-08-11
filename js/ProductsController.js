@@ -8,7 +8,7 @@ class ProductsController {
 
      addItems(name, author, description, image, price, createdAt){
         const item = {
-            id: this.currentId++,
+            id: id,
             name: name,
             author: author,
             description: description,
@@ -19,8 +19,7 @@ class ProductsController {
         }
 
         this.items.push(item);
-        }
-
+    }
     loadItemsFromLocalStorage() {
         const storageItems = localStorage.getItem("items")
         if (storageItems) {
@@ -28,7 +27,9 @@ class ProductsController {
             for (var i = 0, size = items.length; i < size; i++) {
                 const item = items[i];
                 this.items.push(item);
+                console.log(items.id);
+    }
             }
         }
     }
-}
+
