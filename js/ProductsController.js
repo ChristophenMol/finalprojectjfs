@@ -1,3 +1,5 @@
+
+//task 4
 class ProductsController {
     constructor (currentId = 0){
         this.items = [];
@@ -5,7 +7,7 @@ class ProductsController {
     }
 
      addItems(name, author, description, image, price, createdAt){
-        const newProduct = {
+        const item = {
             id: this.currentId++,
             name: name,
             author: author,
@@ -16,32 +18,17 @@ class ProductsController {
 
         }
 
-        this.items.push(newProduct);
+        this.items.push(item);
+        }
+
+    loadItemsFromLocalStorage() {
+        const storageItems = localStorage.getItem("items")
+        if (storageItems) {
+            const items = JSON.parse(storageItems)
+            for (var i = 0, size = items.length; i < size; i++) {
+                const item = items[i];
+                this.items.push(item);
+            }
         }
     }
-
- const i = new ProductsController();
- console.log(i.items);
- i.addItems("flamethrow", "Banksy", "graffiti", "image.jpg", 5000000, "Berlin 2011");
- // console.log(i.items[0]);
-
-function addItemCard(item){
-    const itemHTML = '<div class="card" style="width: 18rem;">\n' +
-        '    <img src="'+item.image+'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'++'</h5>\n' +
-        '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-    const itemsContainer = document.getElementById("list-items");
-    itemsContainer.innerHTML += itemHTML;
 }
-
-addItemCard({'name':'Flowers',
-    'image':'../flowers.jpg',
-    'description':'Flowers.'});
-
-
-
