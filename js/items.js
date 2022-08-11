@@ -1,3 +1,5 @@
+//task 5
+
 const productsController = new ProductsController;
 
 function addItemCard(item){
@@ -15,6 +17,7 @@ function addItemCard(item){
 }
 
 
+// still have an error here to fix
 
 function loadStorageSampleData(){
     if(!localStorage.getItem("items")){
@@ -29,7 +32,7 @@ function loadStorageSampleData(){
 }
 
 function loadCardsListFromProductsController(){
-    for(var i = 0, size = productsController.items.length; i < size ; i++){
+    for(var i = 0; i < productsController.items.length; i++){
         const item = productsController.items[i];
         addItemCard(item);
     }
@@ -39,3 +42,11 @@ function loadCardsListFromProductsController(){
 loadStorageSampleData();
 productsController.loadItemsFromLocalStorage();
 loadCardsListFromProductsController();
+
+//added test element to test addItemCard
+const test = {
+    name:'Japan',
+    image:'https://www.pexels.com/photo/selective-focus-photography-of-pink-cherry-blossom-flowers-2099737/',
+    description:'Cherry Blossoms',
+}
+
