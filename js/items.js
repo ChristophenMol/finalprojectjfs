@@ -1,21 +1,22 @@
-function addItemCard(items){
+const productsController = new ProductsController;
+
+function addItemCard(item){
     const itemHTML = '<div class="card" style="width: 18rem;">\n' +
-        '    <img src="'+items.image +'">\n' +
+        '    <img src="'+item.image +'">\n' +
         '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+items.name+'</h5>\n' +
-        '        <p class="card-text">'+items.description+'</p>\n' +
+        '        <h5 class="card-title">'+item.name+'</h5>\n' +
+        '        <p class="card-text">'+item.description+'</p>\n' +
         '        <a href="#" class="btn btn-primary">Add</a>\n' +
         '    </div>\n' +
         '</div>\n' +
         '<br/>';
-    const itemsContainer = document.getElementById("list-items");
-    itemsContainer.innerHTML += itemHTML;
-
-addItemCard({'name':'Flowers',
-    'image':'../flowers.jpg',
-    'description':'Flowers.'});
+    let itemsContainer = document.getElementById("list-items");
+    itemsContainer.innerHTML = itemHTML;
 }
-/*function loadStorageSampleData(){
+
+
+
+function loadStorageSampleData(){
     if(!localStorage.getItem("items")){
         const sampleItems = [{'name':'juice',
         'img':'https://www.gs1india.org/media/Juice_pack.jpg',
@@ -27,14 +28,13 @@ addItemCard({'name':'Flowers',
     }
 }
 
-function loadCardsListFromItemsController(){
-    for(var i = 0, size = itemsController.items.length; i < size ; i++){
-        const item = itemsController.items[i];
+function loadCardsListFromProductsController(){
+    for(var i = 0, size = productsController.items.length; i < size ; i++){
+        const item = productsController.items[i];
         addItemCard(item);
     }
 }
 
 loadStorageSampleData();
-itemsController.loadItemsFromLocalStorage();
-loadCardsListFromItemsController();
-*/
+productsController.loadItemsFromLocalStorage();
+loadCardsListFromProductsController();
