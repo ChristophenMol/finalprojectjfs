@@ -5,21 +5,20 @@ class ProductsController {
         this.items = [];
         this.currentId = currentId;
     }
-
-     addItems(name, author, description, image, price, createdAt){
+        // create addItems method
+     addItems(name, description, image, price){
         const item = {
-            id: id,
+            id: this.currentId++,
             name: name,
-            author: author,
             description: description,
             image: image,
-            price: price,
-            createdAt: createdAt
+            price: price
+    }         
+    this.items.push(item);
 
-        }
-
-        this.items.push(item);
+    localStorage.setItem("items", JSON.stringify(this.items));
     }
+
     loadItemsFromLocalStorage() {
         const storageItems = localStorage.getItem("items")
         if (storageItems) {
@@ -27,9 +26,9 @@ class ProductsController {
             for (var i = 0, size = items.length; i < size; i++) {
                 const item = items[i];
                 this.items.push(item);
-                console.log(items.id);
+             
     }
             }
         }
-    }
 
+    }
