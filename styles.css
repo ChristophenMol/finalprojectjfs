@@ -1,3 +1,10 @@
+body{
+    background-image: url(flowers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -9,6 +16,54 @@ h2, h3, h6 {
     text-align: center;
 }
 
+figure{
+    border: 4px solid lightgoldenrodyellow;
+}
+
+.about-section .card{
+    background-color: mintcream;
+    border-radius: 20px;
+    margin: 0 20px 20px 0;
+    padding-top: 10px;
+}
+
+.about-section .card img{
+    border: 2px solid mintcream;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.image-gallery h2{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.grid figure{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid figure img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.item-form{
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
+    width: 700px !important;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.item-form h2{
+    padding-top: 20px;
+}
+
+h1, .intro{
+    color: #fff;
+}
 
 .about {
     text-decoration: underline;
@@ -153,4 +208,35 @@ display: inline-block;
    margin: 0 auto;
    
 
+}
+
+.container-custom{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.captured{
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
+    padding: 20px 0 20px 20px;
+}
+
+.captured h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.captured-card h3{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.captured-card{
+    width: calc(100%/3 - 20px);
+    background-color: rgb(248, 249, 250);
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+    min-height: 150px;
 }
